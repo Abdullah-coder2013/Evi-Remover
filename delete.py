@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Evi-Runner"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Evi-Remover"))
         self.label_2.setText(_translate("MainWindow", "Enter File or Folder name. Evi will delete it for you."))
         self.pushButton.setText(_translate("MainWindow", "Delete"))
         self.label.setText(_translate("MainWindow", "File to Delete:"))
