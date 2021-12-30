@@ -39,10 +39,14 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "Enter File or Folder name. Evi will delete it for you."))
         self.pushButton.setText(_translate("MainWindow", "Delete"))
         self.label.setText(_translate("MainWindow", "File to Delete:"))
+        update()
     
     def delete(self):
         self.path = self.lineEdit.text()
         os.remove(self.path)
+        
+    def update(self):
+        self.label_2.adjustSize()
 
 
 if __name__ == "__main__":
