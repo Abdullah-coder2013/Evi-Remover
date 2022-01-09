@@ -7,6 +7,7 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+import os
 
 
 class Ui_MainWindow(object):
@@ -40,11 +41,11 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "Delete"))
         self.label.setText(_translate("MainWindow", "File to Delete:"))
         self.update()
-    
+
     def delete(self):
         self.path = self.lineEdit.text()
         os.remove(self.path)
-        
+
     def update(self):
         self.label_2.adjustSize()
 
